@@ -25,10 +25,18 @@ To get started with this project, clone the repository and install the required 
    OR
    pip install numpy pandas scikit-learn rdkit
 
-## Usuage
+## Model Details
 
+This model is built using molecular fingerprints to encode chemical information. The fingerprints are generated from SMILES strings using the RDKit library, and then a machine learning model (e.g., Random Forest, SVM, or Neural Network) is trained to predict solubility based on those features.
+
+### Features :
+Molecular fingerprints are generated from SMILES strings.
+The model predicts solubility based on these fingerprints using machine learning algorithms.
+
+## Usuage
 After setting up the project, you can use the model to predict the solubility of molecules by providing their molecular structures in the form of SMILES strings.
 You can change the molecules in the smile variable and check the solubility of the particular molecule
 1. 
    ```bash
    smiles = ['Nc1cccc(O)c1', 'CC1CCCC(C)C1']
+
